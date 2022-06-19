@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.seccionDosNosotros img,
+.seccionUnoNosotros img {
+    max-width: 700px;
+}
+
+
+.grillaNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "navNosotros navNosotros navNosotros navNosotros"
+        "headerNosotros headerNosotros headerNosotros headerNosotros"
+        "seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros seccionUnoNosotros"
+        "seccionDosNosotros seccionDosNosotros seccionDosNosotros seccionDosNosotros"
+        "seccionTresNosotros seccionTresNosotros seccionTresNosotros seccionTresNosotros"
+        "footerNosotros footerNosotros footerNosotros footerNosotros";
+}
+
+.navNosotros {
+    grid-area: navNosotros;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+
+}
+
+.navNosotros img {
+    margin-left: 15px;
+}
+
+
+.navNosotros li {
+    list-style: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+.navNosotros li :hover {
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+.navNosotros li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.headerNosotros {
+    grid-area: headerNosotros;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.seccionUnoNosotros {
+    grid-area: seccionUnoNosotros;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.seccionUnoNosotros p {
+    width: 455px;
+    font-size: 27px;
+}
+
+.seccionDosNosotros {
+    grid-area: seccionDosNosotros;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 50,0,50,0;
+    background-color: black;
+}
+
+.divUnirse {
+    text-align: center;
+}
+
+.divUnirse button {
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.divUnirse button:hover{
+    transform: scale(1.1);
+}
+
+.seccionDosNosotros p {
+    width: 455px;
+    font-size: 27px;
+    color: white;
+}
+
+.seccionTresNosotros {
+    grid-area: seccionTresNosotros;
+    margin: auto;
+    padding: 50px;
+}
+
+.footerNosotros {
+    grid-area: footerNosotros;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footerNosotros div{
+    padding: 10px;
+    text-align: center;
+}
+
+.footerNosotros div i{
+    padding-left: 10px;
+}
+
+/* SNEAKERS */
+
+.sneakersGrilla {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-areas:
+        "navSneakers navSneakers navSneakers navSneakers"
+        "seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers seccionUnoSneakers"
+        "seccionDosSneakers seccionDosSneakers seccionDosSneakers seccionDosSneakers"
+        "footerSneakers footerSneakers footerSneakers footerSneakers";
+}
+
+.navSneakers {
+    grid-area: navSneakers;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+}
+
+.navSneakers img {
+    margin-left: 15px;
+}
+
+
+.navSneakers li {
+    list-style: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+.navSneakers li :hover {
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+.navSneakers li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.seccionUnoSneakers img,
+.seccionDosSneakers img {
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.seccionUnoSneakers {
+    grid-area: seccionUnoSneakers;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+
+.seccionDosSneakers {
+    grid-area: seccionDosSneakers;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.footerSneakers {
+    grid-area: footerSneakers;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footerSneakers div{
+    padding: 10px;
+    text-align: center;
+}
+
+.footerSneakers div i{
+    padding-left: 10px;
+}
+
+
+
+/* TIENDAS */
+
+.grillaTiendas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1.5fr 1fr 1.5fr 0.5fr;
+    grid-template-areas:
+        "navTiendas navTiendas navTiendas navTiendas"
+        "headerTiendas headerTiendas headerTiendas headerTiendas"
+        "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas"
+        "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas"
+        "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas"
+        "seccionUnoTiendas seccionUnoTiendas seccionDosTiendas seccionDosTiendas"
+        "footerTiendas footerTiendas footerTiendas footerTiendas";
+}
+
+.navTiendas {
+    grid-area: navTiendas;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+}
+
+.navTiendas img {
+    margin-left: 15px;
+}
+
+.navTiendas li {
+    list-style: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+.navTiendas li :hover, li:focus {
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+.navTiendas li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.headerTiendas {
+    grid-area: headerTiendas;
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.headerTiendas p {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.seccionUnoTiendas {
+    grid-area: seccionUnoTiendas;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fondo-tiendas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: center;
+}
+
+.seccionUnoTiendas p {
+    padding: 20px;
+    text-align: center;
+}
+
+.seccionUnoTiendas p:hover{
+    transform: scale(1.1);
+}
+
+.seccionDosTiendas {
+    grid-area: seccionDosTiendas;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fondo2-tiendas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: center;
+}
+
+.seccionDosTiendas p {
+    padding: 20px;
+    text-align: center;
+}
+
+.seccionDosTiendas p:hover{
+    transform: scale(1.1);
+}
+
+.footerTiendas {
+    grid-area: footerTiendas;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footerTiendas div{
+    padding: 10px;
+    text-align: center;
+}
+
+.footerTiendas div i{
+    padding-left: 10px;
+}
+
+/* INDEX */
+
+.grillaIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-areas:
+        "navIndex navIndex navIndex navIndex"
+        "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
+        "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
+        "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
+        "seccionUnoIndex seccionUnoIndex seccionUnoIndex seccionUnoIndex"
+        "footerIndex footerIndex footerIndex footerIndex";
+}
+
+.navIndex {
+    grid-area: navIndex;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
+}
+
+.navIndex img {
+    margin-left: 15px;
+}
+
+
+.navIndex li {
+    list-style: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+.navIndex li :hover {
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+.navIndex li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.seccionUnoIndex {
+    grid-area: seccionUnoIndex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/fondo.jpg);
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: center;
+    padding-left: 35px;
+}
+
+.seccionUnoIndex h1{
+    font-size: 50px;
+}
+
+.seccionUnoIndex p{
+    font-size: 25px;
+    width: 575px;
+}
+
+
+.footerIndex {
+    grid-area: footerIndex;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footerIndex div{
+    padding: 10px;
+    text-align: center;
+}
+
+.footerIndex div i{
+    padding-left: 10px;
+}
+
+
+/* MEDIA QUERY */
+
+@media(max-width: 750px){
+    .navIndex, .navSneakers, .navNosotros, .navTiendas{
+        flex-direction: column;
+    }
+
+    .seccionUnoSneakers, .seccionDosSneakers{
+        flex-direction: column;
+    }
+
+    .seccionUnoSneakers img, .seccionDosSneakers img{
+        max-width: 400px;
+    }
+
+    .footerIndex, .footerNosotros, .footerSneakers, .footerTiendas{
+        /* align-items: center; */
+        flex-direction: column
+    }
+
+    .footerTiendas div, .footerNosotros div, .footerSneakers div, .footerTiendas div, .footerIndex div{
+        margin-top: 30px;
+        align-items: center;
+    }
+    
+    .grillaTiendas{
+        grid-template-areas:
+        "navTiendas navTiendas navTiendas navTiendas"
+        "headerTiendas headerTiendas headerTiendas headerTiendas"
+        "seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas"
+        "seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas seccionUnoTiendas"
+        "seccionDosTiendas seccionDosTiendas seccionDosTiendas seccionDosTiendas"
+        "seccionDosTiendas seccionDosTiendas seccionDosTiendas seccionDosTiendas"
+        "footerTiendas footerTiendas footerTiendas footerTiendas";
+    }
+
+    .headerTiendas{
+        padding-bottom: 50px,0,50px,0;
+    }
+    
+    .seccionUnoNosotros{
+        flex-direction: column-reverse;
+        background-color: black;
+        color: white;
+        text-align: center;
+        height: 100vh;
+    }
+
+    .seccionDosNosotros{
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+    }
+
+    .seccionTresNosotros{
+        background-color: black;
+    }
+
+    .seccionTresNosotros iframe{
+        max-width: 100%
+    }
+
+}
